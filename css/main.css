@@ -1,0 +1,68 @@
+body {
+  color: #875b35;
+  font-family: 'Lato', sans-serif;
+}
+input, textarea, button {outline: none; }
+
+.form-control:focus {
+  border: 2px solid #000011;
+  outline: none;
+  border-color: #008966;
+}
+
+.header {
+  text-align: center;
+  color: #875b35;
+}
+
+#panel {
+  padding: 20px;
+  color: #875b35;
+  margin: 0 auto;
+  display: none;
+}
+
+#logo {
+  width: 200px;
+  height: 120px;
+  margin-top:20px;
+}
+
+#mainText {
+  font-family: 'Libre Baskerville', serif;
+}
+
+.custom-btn {
+  background-color: #008966;
+  border-color: #008966;
+  color: #fff;
+}
+
+#flip {
+  text-align: center;
+  padding: 5px;
+  max-width: 150px;
+  margin: auto;
+  color: #6c6c68;
+  border: 1px solid #008966;
+  text-transform: uppercase;
+  font-size: 1em;
+}
+
+#panel {
+  background-color: #fff;
+}
+
+#flip:hover {
+  background-color: #008966;
+  color: white;
+}
+
+/*
+   media queries
+*/
+@media only screen and (max-width: 600px) {
+  .h4 {
+    margin: 0 auto;
+  }
+}
