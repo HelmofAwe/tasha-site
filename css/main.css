@@ -2,7 +2,9 @@ body {
   color: #875b35;
   font-family: 'Lato', sans-serif;
 }
-input, textarea, button {outline: none; }
+input, textarea, button {
+    outline: none;
+}
 
 .form-control:focus {
   border: 2px solid #000011;
@@ -26,6 +28,45 @@ input, textarea, button {outline: none; }
   width: 200px;
   height: 120px;
   margin-top:20px;
+}
+
+.nav-link {
+    margin: 0px 10px 0px 10px;
+    color: #875b35;
+    display: inline-block;
+	position: relative;
+	padding-bottom: 3 px;
+    text-decoration: none !important;
+}
+
+.nav-link:after {
+    content: '';
+	display: block;
+	margin: auto;
+    margin-top: 5px;
+	height: 3px; 
+	width: 0px;
+	background: transparent;
+	transition: width .5s ease, background-color .5s ease;
+    text-decoration: none;
+}
+
+.nav-link:hover {
+    color: #008766;
+}
+
+.nav-link:hover:after {
+    width: 100%;
+	background: #008766;
+    text-decoration: none;
+}
+
+.active-link:visited {/*this is a link colour to be called on whatever page is actie currently*/
+    color: #008766;
+    text-decoration: none;
+    border-bottom: 2px solid #008766;
+    margin-bottom: 10px;
+    padding: 0px;
 }
 
 #mainText {
