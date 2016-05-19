@@ -1,7 +1,6 @@
 body {
   color: #875b35;
   font-family: 'Lato', 'Libre Baskerville', sans-serif;
-/* why wont this load?*/
   background: url("../assets/large.jpg");
   background-size: cover auto;
   background-color: #DBD9D4; 
@@ -40,9 +39,11 @@ input, textarea, button {
 }
 
 #logo {
-  max-height: 25%;
-  max-width: 25%;
-  margin-top:20px;
+  max-height: 30%;
+  max-width: 30%;
+  margin-top:50px;
+  margin-bottom: 10px;
+    
 }
 
 .nav-link {
@@ -60,7 +61,7 @@ input, textarea, button {
 	display: block;
 	margin: auto;
     margin-top: 5px;
-	height: 3px; 
+	height: 2px; 
 	width: 0px;
 	background: transparent;
 	transition: width .5s ease, background-color .5s ease;
@@ -122,8 +123,25 @@ input, textarea, button {
   .h4 {
     margin: 0 auto;
   }
+    #logo {
+        max-width: 50%;
+        max-height: 50%;
+    }
 }
 
+@media only screen and (max-width: 400px) {
+    #logo {
+        max-width: 75%;
+        max-height: 75%;
+    }
+}
+/*theres somnething messed up here with scale*/
+@media only screen and (max-width: 1300px) {
+    #logo {
+        max-width: 25%;
+        max-height: 25%;
+    }
+}
 
 hr.style-seven {
     height: 30px;
