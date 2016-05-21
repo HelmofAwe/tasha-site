@@ -1,0 +1,13 @@
+@media screen and (max-width: 900px)
+
+    
+    
+@media screen and (max-width: 800px)
+
+    
+    
+@media screen and (max-width: 550px){
+    .imgbefore-home {
+        display: none;
+        }
+}

@@ -7,7 +7,7 @@ body {
 }
 
 #page-wrap {
-    margin: 20px;
+    margin: 15px;
     padding: 0px 37px;
     background-color: #fff;
     box-shadow: 0px 0px 5px #a2a2a2;
@@ -16,22 +16,27 @@ body {
     min-height: 400px;
     z-index: 100;
 }
-/*why do I need this to center? This controls centering of nav and logo*/
-img.before-home {
+
+.imgbefore-home {
     position: absolute;
-    top: -30px;
-    width: 34px;
-/*    width change to actual px of imag*/
+    margin-top: 60px;
+    width: 150px;
 }
+/*why do I need this to center? This controls centering of nav and logo*/
 .logo-navPos {
     text-align: center;
+}
+
+.list-inline {
+    margin-left: 0px;
+    margin-bottom: 0px;
 }
 #header {
     position: relative;
     z-index: 100;
     max-width: 1000px;
     margin: 0px auto 0px;
-    padding: 0px 20px 0px;
+    padding: 0px 20px 0px 20px;
 }
 
 input, textarea, button {
@@ -52,11 +57,10 @@ input, textarea, button {
 }
 
 #logo {
-  max-height: 30%;
-  max-width: 30%;
-  margin-top:50px;
-  margin-bottom: 5px;
+  margin-top: 50px;
+  margin-bottom: 15px;
   text-align: center !important;
+  width: 150px;
 }
 
 .nav-link {
@@ -135,55 +139,48 @@ input, textarea, button {
   color: white;
 }
 
-/*
-   media queries
-*/
-@media only screen and (max-width: 600px) {
-  .h4 {
-    margin: 0 auto;
-  }
-    #logo {
-        max-width: 50%;
-        max-height: 50%;
-    }
-}
+/*---Line Breaks---*/
 
-@media only screen and (max-width: 400px) {
-    #logo {
-        max-width: 75%;
-        max-height: 75%;
-    }
-}
-/*theres somnething messed up here with scale*/
-@media only screen and (max-width: 1300px) {
-    #logo {
-        max-width: 25%;
-        max-height: 25%;
-    }
-}
-
-hr.style-seven {
-    height: 30px;
-    border-style: solid;
-    border-color: #875b35;
-    border-width: 1px 0 0 0;
-    
-}
-hr.style-seven:before { /* Not really supposed to work, but does */
+.divider {
     display: block;
-    content: "";
-    height: 30px;
-    margin-top: -31px;
-    border-color: #875b35;
-    border-color: black;
-    border-width: 0 0 1px 0;
-   
+    position: relative;
+    max-width: 1000px;
+    height:16px;
+    margin-top: 10px;
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-bottom: 5px;
+    background: url(../assets/Divider-01.svg)no-repeat center center;
 }
-
-
 
 div > h2 {
   display:inline-block;
   padding-left:33px;
   font-size:20px;
 }
+
+/* ----------------media queries---------------- */
+
+@media screen and (max-width: 550px){
+    .imgbefore-home {
+        display: none;
+        }
+    #logo {
+        width: 100px;
+    }
+    .divider {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+}
+
+@media screen and (max-width:300px){
+    .divider {
+        display: none;
+    }
+}
+
+
+
+
+
