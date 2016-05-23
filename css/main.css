@@ -38,7 +38,15 @@ body {
     margin: 0px auto 0px;
     padding: 0px 20px 0px 20px;
 }
-
+/*FILE IN PROGRESS HERE*/
+#back-to-top {
+    position: fixed;
+    right: 10px;
+    top: 50%;
+    margin-top: -11px;
+    display: none;
+}
+/*FILE IN PROGRESS HERE*/
 input, textarea, button {
     outline: none;
 }
@@ -157,6 +165,53 @@ div > h2 {
   display:inline-block;
   padding-left:33px;
   font-size:20px;
+}
+
+/*---CONTENT MAIN PAGE---*/
+
+#main-content {
+    margin: 0 auto;
+}
+
+#main-work {
+    overflow: hidden;
+    width: 100%;
+/*    min-height: 1000px;*/
+    max-width: 1000px;
+    padding-right: 45px;
+    padding-left: 32px;
+}
+
+.thumb-article {
+    display: block;
+    float: right;
+    width: 23.5%;
+    margin-left: 1.5%;
+    position: relative;
+    line-height: 0px;
+    margin-bottom: 1.5%;
+}
+
+.thumb-article-long{
+    display: block;
+    float: right;
+    width: 50%;
+    margin-left: 1.5%;
+    position: relative;
+    line-height: 0px;
+    margin-bottom: 1.5%;
+}
+
+.thumb-article img{
+    width: 100%;
+}
+
+a img {
+    border: none;
+    opacity: 1;
+}
+img {
+    max-width: 100%;
 }
 
 /* ----------------media queries---------------- */
