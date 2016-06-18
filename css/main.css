@@ -227,8 +227,8 @@ div > h2 {
     height: 100%;
     background: rgba(133,91,53,.8);
     opacity:0;
-    -webkit-transition: opacity .25s ease;
-    -moz-transition: opacity .25s ease;
+    -webkit-transition: opacity .5s ease;
+    -moz-transition: opacity .5s ease;
 }
 
 .thumb-article img{
@@ -243,8 +243,8 @@ div > h2 {
     text-align: center;
     background-color:transparent;
     border: 2px solid #fff;
-    margin-top: 45%;
-    margin-left: 45%;
+    margin-top: 0 auto;
+    margin-left: 0 auto;
     padding: 10px;
     width: 80%;
 }
