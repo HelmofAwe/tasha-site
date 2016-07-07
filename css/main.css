@@ -156,8 +156,22 @@ input, textarea, button {
   font-size: 1em;
   letter-spacing: 1px;
 }
-
+#flip2 {
+  text-align: center;
+  padding: 5px;
+  max-width: 225px;
+  margin: auto;
+  color: #6c6c68;
+  border: 1px solid #008966;
+  text-transform: uppercase;
+  font-size: 1em;
+  letter-spacing: 1px;
+}
 #flip:hover {
+  background-color: #008966;
+  color: white;
+}
+#flip2:hover {
   background-color: #008966;
   color: white;
 }
